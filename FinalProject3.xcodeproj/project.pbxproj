@@ -55,57 +55,83 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B57551A721BD70F100D24ED0 /* UI */ = {
+		B57551C121BDA6B500D24ED0 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				B57551B821BD9A3C00D24ED0 /* Custom Views */,
-				B57551B321BD7F0B00D24ED0 /* Storyboards */,
-				B57551B221BD7EFE00D24ED0 /* Custom Cells */,
+				B57551C421BDA6E900D24ED0 /* Custom Views */,
+				B57551C321BDA6D400D24ED0 /* Storyboards */,
+				B57551C221BDA6C500D24ED0 /* Custom Cells */,
 			);
-			name = UI;
+			path = UI;
 			sourceTree = "<group>";
 		};
-		B57551B221BD7EFE00D24ED0 /* Custom Cells */ = {
+		B57551C221BDA6C500D24ED0 /* Custom Cells */ = {
 			isa = PBXGroup;
 			children = (
 				B57551AE21BD785600D24ED0 /* QuoteTableViewCell.swift */,
 			);
-			name = "Custom Cells";
+			path = "Custom Cells";
 			sourceTree = "<group>";
 		};
-		B57551B321BD7F0B00D24ED0 /* Storyboards */ = {
+		B57551C321BDA6D400D24ED0 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
 				B596126E21BD56F200E8FEB1 /* Main.storyboard */,
 				B57551A821BD712600D24ED0 /* Login.storyboard */,
 				B57551AA21BD712F00D24ED0 /* Home.storyboard */,
 			);
-			name = Storyboards;
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		B57551B421BD846200D24ED0 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				B57551B521BD846A00D24ED0 /* Extensions */,
-			);
-			name = Utilities;
-			sourceTree = "<group>";
-		};
-		B57551B521BD846A00D24ED0 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				B57551B621BD84AE00D24ED0 /* UIViewControllerExtension.swift */,
-			);
-			name = Extensions;
-			sourceTree = "<group>";
-		};
-		B57551B821BD9A3C00D24ED0 /* Custom Views */ = {
+		B57551C421BDA6E900D24ED0 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
 				B57551B921BD9A6600D24ED0 /* LoadingView.xib */,
 				B57551BB21BD9AFC00D24ED0 /* LoadingView.swift */,
 			);
-			name = "Custom Views";
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		B57551C521BDA71200D24ED0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B57551A521BD638600D24ED0 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B57551C621BDA71D00D24ED0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B57551A121BD61C600D24ED0 /* Api.swift */,
+				B57551A321BD624400D24ED0 /* Api+Authentication.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B57551C721BDA72C00D24ED0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B575519821BD60A200D24ED0 /* LoginViewController.swift */,
+				B57551B021BD78DA00D24ED0 /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B57551C821BDA74000D24ED0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B57551C921BDA74600D24ED0 /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B57551C921BDA74600D24ED0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B57551B621BD84AE00D24ED0 /* UIViewControllerExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		B596125E21BD56F200E8FEB1 = {
@@ -127,11 +153,11 @@
 		B596126921BD56F200E8FEB1 /* FinalProject3 */ = {
 			isa = PBXGroup;
 			children = (
-				B57551A721BD70F100D24ED0 /* UI */,
-				B596127F21BD5DC800E8FEB1 /* Models */,
-				B596127E21BD5DBC00E8FEB1 /* Network */,
-				B596127D21BD5DA400E8FEB1 /* Controllers */,
-				B57551B421BD846200D24ED0 /* Utilities */,
+				B57551C821BDA74000D24ED0 /* Utilities */,
+				B57551C721BDA72C00D24ED0 /* Controllers */,
+				B57551C621BDA71D00D24ED0 /* Network */,
+				B57551C521BDA71200D24ED0 /* Models */,
+				B57551C121BDA6B500D24ED0 /* UI */,
 				B596127C21BD573F00E8FEB1 /* Supporting Files */,
 			);
 			path = FinalProject3;
@@ -146,32 +172,6 @@
 				B596127621BD56F400E8FEB1 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B596127D21BD5DA400E8FEB1 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				B575519821BD60A200D24ED0 /* LoginViewController.swift */,
-				B57551B021BD78DA00D24ED0 /* HomeViewController.swift */,
-			);
-			name = Controllers;
-			sourceTree = "<group>";
-		};
-		B596127E21BD5DBC00E8FEB1 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				B57551A121BD61C600D24ED0 /* Api.swift */,
-				B57551A321BD624400D24ED0 /* Api+Authentication.swift */,
-			);
-			name = Network;
-			sourceTree = "<group>";
-		};
-		B596127F21BD5DC800E8FEB1 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				B57551A521BD638600D24ED0 /* User.swift */,
-			);
-			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
