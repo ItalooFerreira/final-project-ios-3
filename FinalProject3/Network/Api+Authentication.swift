@@ -21,7 +21,7 @@ extension Api {
         
         if let username = parameters["username"] as? String, let password = parameters["password"] as? String {
             if let authorizationToken = String(format: "%@:%@", username, password).data(using: .utf8)?.base64EncodedString() {
-                request.addValue(authorizationToken, forHTTPHeaderField: HttpHeader.authorization)
+                request.addValue("Basic \(authorizationToken)", forHTTPHeaderField: HttpHeader.authorization)
             }
         }
         
